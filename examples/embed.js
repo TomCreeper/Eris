@@ -12,7 +12,7 @@ bot.on("messageCreate", (msg) => { // When a message is created
         bot.createMessage(msg.channel.id, {
             embed: {
                 title: "I'm an embed!", // Title of the embed
-                description: "Here is some more info, with **awesome** formatting.\nPretty *neat*, huh?",
+                description: "Here is some more information, with **awesome** formatting.\nPretty *neat*, huh?",
                 author: { // Author property
                     name: msg.author.username,
                     icon_url: msg.author.avatarURL
@@ -20,12 +20,12 @@ bot.on("messageCreate", (msg) => { // When a message is created
                 color: 0x008000, // Color, either in hex (show), or a base-10 integer
                 fields: [ // Array of field objects
                     {
-                        name: "Some extra info.", // Field title
+                        name: "Some extra information.", // Field title
                         value: "Some extra value.", // Field
                         inline: true // Whether you want multiple fields in same line
                     },
                     {
-                        name: "Some more extra info.",
+                        name: "Some more extra information.",
                         value: "Another extra value.",
                         inline: true
                     }
